@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center; 
-    padding: 2rem 6rem;
+    padding: 2rem 2rem;
 }
 
 .uniflow__navbar-links {
@@ -15,12 +15,14 @@
 .uniflow__navbar-links_logo {
     display: flex;
     margin-right: 2rem;
+    align-items: center;
 }
 
 .uniflow__navbar-links_logo h1 {
     font-family: Syncopate;
     font-style: normal;
     font-size: 35px;
+    margin: 5px;
     text-transform: lowercase;
     background: linear-gradient(180deg, #DADADA 0%, rgba(255, 255, 255, 0) 0.01%, rgba(255, 255, 255, 0.578305) 0.02%, #FFFFFF 0.03%, #FFFFFF 0.04%, #DADADA 91.15%, #DADADA 100%);
     -webkit-background-clip: text;
@@ -166,13 +168,39 @@
 
 }
 
+
+
+
+/* Media Queries Mobile */
 @media screen and (max-width: 748px) {
     .uniflow__navbar {
         padding: 2rem 10px;
         justify-content: space-around;
+        flex-direction: column;
     }
     .uniflow__navbar-links_logo h1{
         font-size: 26px;
+    }
+    .nav-btn-mobile-display{
+        display: flex !important;
+        width: 53px;
+        height: 15px;
+
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12.5px;
+        line-height: 15px;
+        margin-top: 5px;
+        /* identical to box height */
+
+
+        color: #FFFFFF;
+    }
+    .uniflow__navbar-menu {
+        margin: 0px;
+        width: 50%;
+        justify-content: inherit;
     }
 
     .uniflow__navbar-sign {
@@ -180,12 +208,13 @@
     }
 
     .uniflow__navbar-menu_container {
-        top: 20px;
+        
+        top: 10%;
+        left: 46%;
+        /* bring your own prefixes */
+        transform: translate(-50%, -50%);
     }
 
-    .uniflow__navbar-menu_container-links-sign {
-        display: block;
-    }
 }
 
 

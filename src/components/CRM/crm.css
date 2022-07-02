@@ -17,6 +17,23 @@
   color: #F0F0F0;
 }
 
+/* Media Query IPAD PRO */
+@media only screen and (min-width: 1024px) and (max-height: 1366px)
+  and (-webkit-min-device-pixel-ratio: 1.5) and (hover: none) {
+    .uniflow__crm {
+      justify-content: center;
+    }
+  }
+
+  /* Media Query IPAD and similar size screens */
+@media screen and (max-width: 928px) {
+  .uniflow__crm {
+    justify-content: center;
+  }
+}
+
+
+/* Media Query for mobile screens */
 @media screen and (max-width: 748px) {
   
   .uniflow__crm {

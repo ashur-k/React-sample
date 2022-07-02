@@ -37,18 +37,23 @@ const Navbar = () => {
           <p>Business</p>
       </div>
       <div className='uniflow__navbar-menu'>
+        <div className='display-none nav-btn-mobile-display'>
+          <p>Personal</p>
+        </div>
+          <div>
           {
             toggleMenu
               ? <RiCloseLine color="#fff" size={27} onClick={() => setToggleMenu(false)}/>
               : <RiMenu3Line color="#fff" size={27} onClick={() => setToggleMenu(true)}/>
-          }
+          }</div>
+          <div className='display-none nav-btn-mobile-display'>
+            <p>Business</p>
+          </div>
           {
              toggleMenu && (
               <div className="uniflow__navbar-menu_container scale-up-center">
                 <div className="uniflow__navbar-menu_container-links">
                   <NavbarItems />
-                  
-
                 </div>
 
                 {/* <div className="uniflow__navbar-menu_container-links">

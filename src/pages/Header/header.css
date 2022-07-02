@@ -101,6 +101,13 @@
   }
   .header__content__body-heading p{
     font-size: 32px;
+   
+  }
+  .header__content__body-footer{
+    text-align: center;
+  }
+  .uniflow__header__content__body__footer-input{
+    justify-content: center;
   }
       
 }
@@ -118,11 +125,25 @@
     text-align: center;
   }
   .header__content__body-heading h1{
-    font-size: 38px;
-  }
-  .header__content__body-heading p{
     font-size: 32px;
   }
+  .header__content__body-footer {
+    text-align: center;
+  }
+  .header__content__body-footer p{
+    font-size: 22px;
+  }
+  .header__content__body-heading p{
+    font-size: 28px;
+  }
+  .uniflow__header__content__body__footer-input input{
+    font-size: 22px;
+  } 
+  .uniflow__header__content__body__footer-input button{
+    font-size: 22px;
+  }
+
+  
 
 }
 
