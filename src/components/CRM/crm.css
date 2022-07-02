@@ -1,0 +1,29 @@
+.uniflow__crm {
+  display: flex;
+  align-items: center;
+  padding: 10px 40px;
+  height: 60px;
+  background: rgba(54, 101, 137, 0.75);
+  box-shadow: 16px 16px 32px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.uniflow__crm p {
+  font-family: 'Work Sans';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: #F0F0F0;
+}
+
+@media screen and (max-width: 748px) {
+  
+  .uniflow__crm {
+    justify-content: center;
+  }
+  .uniflow__crm p{
+    font-size: 15px;
+  }
+
+}

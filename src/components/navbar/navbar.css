@@ -1,0 +1,192 @@
+.uniflow__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 2rem 6rem;
+}
+
+.uniflow__navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.uniflow__navbar-links_logo {
+    display: flex;
+    margin-right: 2rem;
+}
+
+.uniflow__navbar-links_logo h1 {
+    font-family: Syncopate;
+    font-style: normal;
+    font-size: 35px;
+    text-transform: lowercase;
+    background: linear-gradient(180deg, #DADADA 0%, rgba(255, 255, 255, 0) 0.01%, rgba(255, 255, 255, 0.578305) 0.02%, #FFFFFF 0.03%, #FFFFFF 0.04%, #DADADA 91.15%, #DADADA 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.uniflow__navbar-links_logo img {
+    width: 62.56px;
+    height: 16.02px;
+}
+
+.uniflow__navbar-links_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.uniflow__navbar-sign {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+  
+.uniflow__navbar-links_container p,
+.uniflow__navbar-sign p,
+.uniflow__navbar-menu_container p {
+    color: #fff;
+    font-family: 'Work Sans';
+    font-weight: 500;
+    line-height: 35px;
+    text-transform: capitalize;
+
+    
+    height: 35px;
+
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-size: 30px;
+
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.uniflow__navbar-sign button,
+.uniflow_navbar-menu_container button {
+    padding: 0.5rem 1rem;
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.uniflow__navbar-menu {
+    margin-left: 1rem;
+
+    display: none;
+    position: relative;
+}
+
+
+
+.uniflow__navbar-menu svg {
+    cursor: pointer;
+    
+}
+
+.uniflow__navbar-menu_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    
+    text-align: end;
+    /*background: var(--color-footer);*/
+    padding: 2rem;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0, 0,0.2);
+}
+
+.uniflow__navbar-menu_container p {
+    /*margin: 1rem 0;*/
+    color: #000;
+    background: var(--color-menu);
+    
+    display: flex;
+    flex-direction: row;
+    /*justify-content: flex-end;*/
+    align-items: flex-start;
+    padding: 10px;
+    gap: 20px;
+
+    position: relative;
+    
+
+    background: #F0F0F0;
+    /*border-radius: 20px;*/
+}
+
+/* Set up to see if I can get the navigation to line up */
+
+.uniflow__menu_container-usecases p {
+    /*color: pink !important;*/
+    display: flex;
+    order: 2;
+}
+
+.uniflow__menu_container-features {
+    order: 3;
+}
+
+
+.uniflow__navbar-menu_container-links a {
+    font-size: 14px;
+}
+
+.uniflow__navbar-menu_container-links-sign {
+    display: none;
+}
+
+.rotate-center{-webkit-animation:rotate-center .6s ease-in-out both;animation:rotate-center .6s ease-in-out both}
+
+
+ @-webkit-keyframes rotate-center{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes rotate-center{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}
+
+@media screen and (max-width: 2558px) {
+    .uniflow__navbar-links_container {
+        display: none;
+    }
+
+    .uniflow__navbar-menu {
+        display: flex;
+    }
+
+}
+
+@media screen and (max-width: 748px) {
+    .uniflow__navbar {
+        padding: 2rem 10px;
+        justify-content: space-around;
+    }
+    .uniflow__navbar-links_logo h1{
+        font-size: 26px;
+    }
+
+    .uniflow__navbar-sign {
+        display: none;
+    }
+
+    .uniflow__navbar-menu_container {
+        top: 20px;
+    }
+
+    .uniflow__navbar-menu_container-links-sign {
+        display: block;
+    }
+}
+
+
+
