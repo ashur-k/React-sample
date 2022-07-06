@@ -7,12 +7,41 @@ const Header = () => {
   
 
   const component_values = [
-    "I need a CRM to know my customers",
-    "I need an accountant",
-    "I need analytics",
-    "I need inventory management",
-    "I need HR system",
-    "I need Payroll system",
+    { 
+      id: 1,
+      title: "I need a CRM to know my customers",
+      desc: "Some description here 1"
+    },
+    { 
+      id: 2,
+      title: "I need Payroll system",
+      desc: "Some description here 2"
+    },
+    { 
+      id: 3,
+      title: "I need HR system",
+      desc: "Some description here 3"
+    },
+    { 
+      id: 4,
+      title:   "I need inventory management",
+      desc: "Some description here 4"
+    },
+    { 
+      id: 5,
+      title: "I need analytics",
+      desc: "Some description here 5"
+    },
+    { 
+      id: 6,
+      title: "I need a CRM to know my customers",
+      desc: "Some description here 6"
+    },
+    { 
+      id: 7,
+      title: "I need an accountant",
+      desc: "Some description here 7"
+    },    
   ]
 
   return (
@@ -45,24 +74,20 @@ const Header = () => {
 
         <div className='header_content-comps'>
         <div className='display-none mobile-display'>
-         <h3>
+          <h3>
             Are you a one man start-up, or you hire 50+ people?
-           </h3>
-           <p>
+          </h3>
+          <p>
              Our all in one solution is for you?
           </p>
         </div>
-
           {
             component_values.map(value => (
-              <CRM text={value}/>
+              <CRM key={value?.id} text={value?.title} desc={value?.desc}/>
               ))
           }
-        </div>
-        
-      </div>
-      
-      
+        </div>        
+      </div>  
     </div>
   )
 }
