@@ -1,6 +1,7 @@
 import React from 'react';
 import './header.css';
 import { CRM } from '../../components';
+import image from '../../assests/uniflow.png';
 
 const Header = () => {
 
@@ -10,37 +11,38 @@ const Header = () => {
     { 
       id: 1,
       title: "I need a CRM to know my customers",
-      desc: "Some description here 1"
+      desc: "Some description here 1",
+      svg: image
     },
     { 
       id: 2,
       title: "I need Payroll system",
-      desc: "Some description here 2"
+      desc: "Some description here 2",
+      svg: image
     },
     { 
       id: 3,
       title: "I need HR system",
-      desc: "Some description here 3"
+      desc: "Some description here 3",
+      svg: image
     },
     { 
       id: 4,
       title:   "I need inventory management",
-      desc: "Some description here 4"
+      desc: "Some description here 4",
+      svg: image
     },
     { 
       id: 5,
       title: "I need analytics",
-      desc: "Some description here 5"
-    },
-    { 
-      id: 6,
-      title: "I need a CRM to know my customers",
-      desc: "Some description here 6"
+      desc: "Some description here 5",
+      svg: image
     },
     { 
       id: 7,
       title: "I need an accountant",
-      desc: "Some description here 7"
+      desc: "Some description here 7",
+      svg: image
     },    
   ]
 
@@ -83,7 +85,7 @@ const Header = () => {
         </div>
           {
             component_values.map(value => (
-              <CRM key={value?.id} text={value?.title} desc={value?.desc}/>
+              <CRM key={value.id} text={value.title} desc={value.desc} svg={value.svg}/>
               ))
           }
         </div>        

@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import { CustomerCard } from '../../components';
 import './crm.css';
 
-const CRM = ({text, desc}) => {
+const CRM = ({text, desc, svg}) => {
 
   const [ toggleCard, setToggleCard ] = useState(false)
   console.log(toggleCard)
@@ -13,7 +13,7 @@ const CRM = ({text, desc}) => {
     useEffect(() => {     
       setCardText(text)
       setCardDesc(desc)
-    }, [text,desc]);   
+    }, [text, desc]);   
   
 
 
@@ -23,9 +23,10 @@ const CRM = ({text, desc}) => {
       <div>
         {
           toggleCard && (
-            <CustomerCard text={cardText} desc={cardDesc} open={toggleCard} closeDialog={setToggleCard}/>
+            <CustomerCard  text={cardText} desc={cardDesc} open={toggleCard} closeDialog={setToggleCard} svg={svg}/>
           )
         }
+    
       </div>
       
     </div>

@@ -3,12 +3,11 @@ import './mobile-card.css'
 
 const MobileCard = () => {
   return (
-    <div className='Frame-2010' id="alert-dialog-title">
-        <div className='Frame-1931'>
-            <div className='Frame-1930'>
-                <div className='Frame-1933' id="alert-dialog-description">
+
+  
+                <div className='Frame-19333' id="alert-dialog-description">
                     <h3>Some Text here</h3>
-                    <div className='Frame-2035'>
+               
                         <div className='Frame-2034'>
                             <p>
                                 some description here
@@ -296,12 +295,8 @@ const MobileCard = () => {
 
                     </div>
 
-                </div>
                 
-                
-            </div>
-        </div>
-    </div>
+  
   )
 }
 
