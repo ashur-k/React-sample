@@ -1,50 +1,13 @@
 import React from 'react';
 import './header.css';
 import { CRM } from '../../components';
-import image from '../../assests/uniflow.png';
+import customerComponentsData from '../../data/customerComponentsData';
+import MobileCard from '../../components/mobile-card-version/MobileCard';
+import coffeeShop from '../../assests/coffee-shop.svg';
+
 
 const Header = () => {
 
-  
-
-  const component_values = [
-    { 
-      id: 1,
-      title: "I need a CRM to know my customers",
-      desc: "Some description here 1",
-      svg: image
-    },
-    { 
-      id: 2,
-      title: "I need Payroll system",
-      desc: "Some description here 2",
-      svg: image
-    },
-    { 
-      id: 3,
-      title: "I need HR system",
-      desc: "Some description here 3",
-      svg: image
-    },
-    { 
-      id: 4,
-      title:   "I need inventory management",
-      desc: "Some description here 4",
-      svg: image
-    },
-    { 
-      id: 5,
-      title: "I need analytics",
-      desc: "Some description here 5",
-      svg: image
-    },
-    { 
-      id: 7,
-      title: "I need an accountant",
-      desc: "Some description here 7",
-      svg: image
-    },    
-  ]
 
   return (
     <div className="uniflow__header section__padding">
@@ -59,7 +22,7 @@ const Header = () => {
       <div className="uniflow__header-content">
         <div className='header__content-body'>
           <div className='header__content__body-heading'>
-            <h1>Busisness management for SMB</h1>
+            <h1>Business management for SMB</h1>
             <p>Decentralise & automate your business today</p>
           </div>
           <div className='header__content__body-footer'>
@@ -76,20 +39,29 @@ const Header = () => {
 
         <div className='header_content-comps'>
         <div className='display-none mobile-display'>
-          <h3>
+         <h3>
             Are you a one man start-up, or you hire 50+ people?
-          </h3>
-          <p>
+           </h3>
+           <p>
              Our all in one solution is for you?
           </p>
         </div>
+
           {
-            component_values.map(value => (
-              <CRM key={value.id} text={value.title} desc={value.desc} svg={value.svg}/>
+            customerComponentsData.map(value => (
+              <CRM key={value.id} text={value.title} desc={value.desc} svg={value.svg} />
               ))
           }
-        </div>        
-      </div>  
+        </div>
+        
+      </div>
+
+      {/* <MobileCard 
+        text={"I need a decentralised account"}
+        desc={"Start taking payments directly into your own decentralised account. Take payments regardless of whether your user wants to pay using normal currency or crypto currency.Let your users pay using Universal coin to avoid merchant costs of 3-4% per transaction"}
+        svg={coffeeShop}
+        /> */}
+      
     </div>
   )
 }

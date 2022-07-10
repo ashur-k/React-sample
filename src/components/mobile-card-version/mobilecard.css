@@ -1,0 +1,65 @@
+.mobile-Frame-2010{
+    
+   
+}
+.mobile-Frame-1931{
+    
+}
+
+.mobile-Frame-1930{
+ 
+   
+}
+
+.mobile-Frame-1933{
+    
+}
+
+.mobile-Frame-1933 h3{
+    
+}
+
+.mobile-Frame-2035{
+    /* Frame 2035 */
+
+
+/* Auto layout */
+
+   
+}
+
+.mobile-Frame-2034{
+    
+}
+.mobile-Frame-2034 p{
+    
+}
+
+.mobile-Frame-1816{
+   
+}
+
+.mobile-Frame-1816 p{
+   
+}
+
+/* Media Query IPAD and similar size screens */
+@media screen and (max-width: 928px) {
+    .mobile-Frame-2010{
+        position: fixed;
+        width: 642px;
+        height: 461px;
+        padding: 20px;
+        text-align: center;
+        background: #366589;
+        box-shadow: 16px 16px 32px rgba(0, 0, 0, 0.5);
+        border-radius: 0px 30px 30px 0px;
+        /* top: 25%;
+        right: 35%; */
+        background-color: royalblue;
+
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+  }

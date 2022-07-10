@@ -5,15 +5,14 @@
   scroll-behavior: smooth;
 }
 
-.main{
-  min-height: 100vh;
+.App {
+  min-height: 110vh;
 }
 
 body {
   background: var(--color-bg);
-  background-image: url("C:\Users\ashur\Desktop\robin-uniflow-main\robin-uniflow-main\src\assests\charles-forerunner-3fPXt37X6UQ-unsplash 1.png");
+  background-image: url("./assests/charles-forerunner-3fPXt37X6UQ-unsplash 1.png");
   background-size: cover;
- 
 }
 
 a {
@@ -21,9 +20,13 @@ a {
   text-decoration: none;
 }
 
-.display-none{
+
+/* Add to header.jsx  with mobile display*/
+
+.display-none {
   display: none;
 }
+
 
 .gradient__bg {
     background:-moz-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
@@ -89,3 +92,5 @@ a {
     margin-right: 5px;
   }
 }
+
+

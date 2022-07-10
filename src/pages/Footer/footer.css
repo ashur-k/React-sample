@@ -1,11 +1,8 @@
 h1.uniflow__footer__text {
-  /*
-  display: flex;
-  position: relative;
+  position: fixed;
+  left: 0;
+  bottom: 0;
   width: 100%;
-  
-
-  background: rgba(54, 101, 137, 0.75);*/
   font-family: 'Work Sans';
   color: #fff! important;
   display: flex;
@@ -14,6 +11,7 @@ h1.uniflow__footer__text {
   align-items: center;
   padding: 10px;
   gap: 10px;
+
   background: rgba(54, 101, 137, 0.75);
 }
 

@@ -1,24 +1,21 @@
 import React from 'react';
+//import { Container } from 'react-bootstrap'
+//import { BrowserRouter as Routes, Route } from 'react-router-dom'
 import { Header, Footer } from './pages';
-import { Navbar, NavbarItems } from './components';
-import { Container } from 'react-bootstrap'
+import { Navbar } from './components';
 import './App.css';
-import CustomerCard from './components/customer-card/Customer-Card';
 
-// removed className='gradient__bg' from line 12
 
 
 const App = () => {
-
     return (
-    <div>    
-        <div className='main'>
-            <Navbar />
-            <Header />
-            {/* <CustomerCard /> */}
+        <div className='App'>
+            <div>
+                <Navbar />
+                <Header />
+                <Footer />
+            </div>
         </div>
-        <Footer /> 
-    </div> 
     )
 }
 

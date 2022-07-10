@@ -1,11 +1,9 @@
 import { Dialog } from '@mui/material';
 import React from 'react';
-import './customer-card.css';
+import './cards.css'
 
 
-
-const CustomerCard = ({text, desc, open, closeDialog, svg}) => {
-     
+const Cards = ({text, desc, svg, open, closeDialog }) => {
 
   return (
     <Dialog
@@ -13,8 +11,8 @@ const CustomerCard = ({text, desc, open, closeDialog, svg}) => {
         open={open} 
         onClose={() => closeDialog(false)}
         aria-labelledby="alert-dialog-title"
-        aria-describedby="alert-dialog-description"
-    >
+        aria-describedby="alert-dialog-description">
+            
     <div className='Frame-2010' id="alert-dialog-title">
         <div className='Frame-1931'>
             <div className='Frame-1930'>
@@ -22,16 +20,16 @@ const CustomerCard = ({text, desc, open, closeDialog, svg}) => {
                     <h3>{text}</h3>
                     <div className='Frame-2035'>
                         <div className='Frame-2034'>
-                            <p>
+                            <p className='mobile-display-none '>
                                 {desc}
                             </p>
                             <div className='Frame-1816'>
                                 <p>Sign up</p>
                             </div>
                         </div>
-                        <img src={svg} />
-
-
+                        <div className='Frame-2033'>
+                            <img src={svg}/>
+                        </div>
                     </div>
 
                 </div>
@@ -41,7 +39,8 @@ const CustomerCard = ({text, desc, open, closeDialog, svg}) => {
         </div>
     </div>
     </Dialog>
+
   )
 }
 
-export default CustomerCard
+export default Cards

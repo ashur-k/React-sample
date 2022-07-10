@@ -38,6 +38,9 @@
   
   .uniflow__crm {
     justify-content: center;
+    width: 320px;
+    border-radius: 6.27293px;
+    margin-left: 27.5px;
   }
   .uniflow__crm p{
     font-size: 15px;

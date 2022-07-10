@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center; 
-    padding: 2rem 2rem;
+    padding: 4rem 6rem;
 }
 
 .uniflow__navbar-links {
@@ -16,6 +16,15 @@
     display: flex;
     margin-right: 2rem;
     align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    width: 292.17px;
+    height: 55.17px;
+
 }
 
 .uniflow__navbar-links_logo h1 {
@@ -45,6 +54,13 @@
     justify-content: flex-end;
     align-items: center;
 }
+
+
+.uniflow__navbar-menu {
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 4px;
+}
   
 .uniflow__navbar-links_container p,
 .uniflow__navbar-sign p,
@@ -54,6 +70,7 @@
     font-weight: 500;
     line-height: 35px;
     text-transform: capitalize;
+    
 
     
     height: 35px;
@@ -88,7 +105,6 @@
 }
 
 
-
 .uniflow__navbar-menu svg {
     cursor: pointer;
     
@@ -101,7 +117,6 @@
     flex-direction: column;
     
     text-align: end;
-    /*background: var(--color-footer);*/
     padding: 2rem;
     position: absolute;
     right: 0;
@@ -113,28 +128,20 @@
 }
 
 .uniflow__navbar-menu_container p {
-    /*margin: 1rem 0;*/
     color: #000;
     background: var(--color-menu);
     
     display: flex;
     flex-direction: row;
-    /*justify-content: flex-end;*/
     align-items: flex-start;
     padding: 10px;
     gap: 20px;
-
     position: relative;
-    
-
     background: #F0F0F0;
-    /*border-radius: 20px;*/
 }
 
-/* Set up to see if I can get the navigation to line up */
 
 .uniflow__menu_container-usecases p {
-    /*color: pink !important;*/
     display: flex;
     order: 2;
 }
@@ -157,9 +164,39 @@
 
  @-webkit-keyframes rotate-center{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes rotate-center{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}
 
-@media screen and (max-width: 2558px) {
+
+/* Media Query IPAD and similar size screens */
+@media screen and (max-width: 928px) {
+
+    .uniflow__navbar {
+        padding: 2rem 10px;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .nav-btn-mobile-display{
+        display: flex !important;
+        width: 53px;
+        height: 15px;
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12.5px;
+        line-height: 15px;
+        margin-top: 5px;
+        /* identical to box height */
+        color: #FFFFFF;
+    }
+
+}
+
+@media screen and (max-width: 4000px) {
     .uniflow__navbar-links_container {
         display: none;
+    }
+
+    .uniflow__navbar-menu {
+        border: 0;
     }
 
     .uniflow__navbar-menu {
@@ -168,8 +205,17 @@
 
 }
 
+/* Ipad Mini Navigation size */
+@media screen and (max-width: 768px) {
+    .uniflow__navbar-sign p {
+        font-size: 24px;
+    }
+}
 
-
+/* Media queries at 1190
+.header__content__body-footer {
+    width: 666px;
+}*/
 
 /* Media Queries Mobile */
 @media screen and (max-width: 748px) {
@@ -178,6 +224,18 @@
         justify-content: space-around;
         flex-direction: column;
     }
+    .uniflow__navbar-menu {
+        border: 0;
+    }
+    .uniflow__navbar-menu svg {
+        border: 2px solid white;
+        border-radius: 5px;
+        padding-left: 2px;
+        padding-right: 2px;
+        margin-left:10px;
+        margin-right:10px;
+    }
+
     .uniflow__navbar-links_logo h1{
         font-size: 26px;
     }
@@ -185,7 +243,6 @@
         display: flex !important;
         width: 53px;
         height: 15px;
-
         font-family: 'Work Sans';
         font-style: normal;
         font-weight: 500;
@@ -193,14 +250,7 @@
         line-height: 15px;
         margin-top: 5px;
         /* identical to box height */
-
-
         color: #FFFFFF;
-    }
-    .uniflow__navbar-menu {
-        margin: 0px;
-        width: 50%;
-        justify-content: inherit;
     }
 
     .uniflow__navbar-sign {
@@ -214,8 +264,4 @@
         /* bring your own prefixes */
         transform: translate(-50%, -50%);
     }
-
 }
-
-
-
